@@ -1,0 +1,10 @@
+<h2>My Toys</h2>
+<ul class="toys">
+    <li *ngFor="let toy of toys">
+        <a routerLink="/detail/{{toy.id}}">
+          <span class="badge">{{toy.id}}</span> {{toy.name}}
+        </a>
+      </li>
+</ul>
+<!-- 
+<app-toy-detail [toy]="selectedToy"></app-toy-detail> -->
